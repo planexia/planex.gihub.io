@@ -31,17 +31,26 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center">
-            <div className="flex items-center space-x-2">
-              <Building2 className={`h-8 w-8 ${isScrolled ? 'text-blue-600' : 'text-white'}`} />
-              <span className={`text-xl font-bold tracking-tight ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}>
-                Planexia
-              </span>
-            </div>
-          </div>
+{/* Logo */}
+<div className="flex items-center ">
+  <div className="flex items-center space-x-2">
+    <img
+      src="/dist/assets/logo-planexia.png"
+      alt="Planexia Logo"
+      className="h-20 w-26"
+    />
+    <span
+      className={`text-xl font-bold tracking-tight ${
+        isScrolled ? 'text-gray-900' : 'text-white'
+      }`}
+    >
+      
+    </span>
+  </div>
+</div>
+
+
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
