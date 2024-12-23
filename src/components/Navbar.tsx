@@ -32,22 +32,24 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
 {/* Logo */}
-<div className="flex items-center ">
-  <div className="flex items-center space-x-2">
+<div className="flex items-center space-x-1">
+<div className="flex items-center justify-center border-[2px] border-white bg-[rgba(250, 250, 250, 0.8)] rounded-md ">
+
     <img
       src="/dist/assets/logo-planexia.png"
       alt="Planexia Logo"
-      className="h-20 w-26"
+      className="w-28 rounded-md"
     />
     <span
       className={`text-xl font-bold tracking-tight ${
         isScrolled ? 'text-gray-900' : 'text-white'
       }`}
     >
-      
     </span>
   </div>
 </div>
+
+
 
 
 
