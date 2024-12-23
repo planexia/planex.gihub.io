@@ -15,7 +15,12 @@ export default function Hero() {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-2xl sm:text-3xl text-white mb-2 block">Planexia</span>
+        <span className="text-2xl sm:text-3xl text-white mb-2 block" style={{
+    color: 'black',
+    textShadow: '2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white, 0 2px 0 white, 2px 0 0 white, 0 -2px 0 white, -2px 0 0 white'
+}}>
+    PLANEXIA
+</span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             Soluciones Empresariales<br />
             ERP y CRM
