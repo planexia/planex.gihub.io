@@ -37,7 +37,7 @@ export default function Navbar() {
 
     <img
       src="../dist/assets/logo-planexia.png"
-      alt="Planexia Logo"
+      
       className="w-28 rounded-md"
     />
     <span
