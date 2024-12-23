@@ -36,7 +36,7 @@ export default function Navbar() {
 <div className="flex items-center justify-center border-[2px] border-white bg-[rgba(250, 250, 250, 0.8)] rounded-md ">
 
     <img
-      src="dist/assets/logo-planexia.png"
+      src="dist/logo-planexia.png"
       
       className="w-28 rounded-md"
     />
