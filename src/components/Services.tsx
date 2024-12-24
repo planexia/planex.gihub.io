@@ -48,7 +48,7 @@ const serviceCategories = [
       {
         title: 'Análisis Organizacional',
         description: 'Evaluación de organigrama e implementación de indicadores de gestión',
-        icon:  ChartSpline
+        icon: ChartSpline
       },
       {
         title: 'Seguimiento Operativo',
@@ -91,50 +91,55 @@ const serviceCategories = [
 
 export default function Services() {
   return (
-    <div id="services" className="py-24 bg-gray-50">
+    <div id="services" className="py-24 bg-gradient-to-b from-black via-gray-800 to-gray-600 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Frase antes de la foto */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-black">
+          <h2 className="text-3xl sm:text-4xl font-bold">
             Simplifique su Gestión con Dolibarr ERP/CRM
           </h2>
         </div>
 
         {/* Nueva imagen de Dolibarr */}
-        <div className="relative mb-16 flex justify-center">
-  <img
-    src="https://viaziza.com/wp-content/uploads/2024/02/erp-dolibar.jpg"
-    alt="Modern Dolibarr ERP/CRM"
-    className=" sm:w-2/5 h-48 object-cover rounded-lg shadow-lg"
-  />
-</div>
-
+        <div className="relative mb-24 flex justify-center">
+          <img
+            src="https://viaziza.com/wp-content/uploads/2024/02/erp-dolibar.jpg"
+            alt="Modern Dolibarr ERP/CRM"
+            className="sm:w-2/5 h-48 object-cover rounded-lg shadow-lg"
+          />
+        </div>
 
         {/* Sección de servicios */}
-        <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Nuestros Servicios</h2>
-          <p className="mt-4 text-lg sm:text-xl text-gray-600">
+        <div className="mt-16 mb-4 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-200">
+            Nuestros Servicios
+          </h2>
+          <p className="mt-4 text-lg sm:text-xl text-gray-300">
             Soluciones integrales para la gestión y transformación de su empresa
           </p>
         </div>
 
         <div className="mt-20 space-y-16 sm:space-y-20">
           {serviceCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex}>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 text-center">
+            <div 
+              key={categoryIndex}
+              className={category.title === 'Sector Agropecuario' ? 'flex flex-col items-center' : ''}>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-200 mb-8 text-center">
                 {category.title}
               </h3>
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div 
+                className={`grid ${
+                  category.title === 'Sector Agropecuario' ? 'grid-cols-1 justify-items-center' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+                } gap-8`}>
                 {category.services.map((service, serviceIndex) => (
                   <div
                     key={serviceIndex}
-                    className="relative group bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
-                  >
+                    className="relative group bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <div className="relative bg-white p-6 rounded-lg">
+                    <div className="relative bg-white/10 p-6 rounded-lg">
                       <service.icon className="h-8 w-8 text-blue-600" />
-                      <h3 className="mt-4 text-lg sm:text-xl font-medium text-gray-900">{service.title}</h3>
-                      <p className="mt-2 text-gray-500">{service.description}</p>
+                      <h3 className="mt-4 text-lg sm:text-xl font-bold text-gray-200">{service.title}</h3>
+                      <p className="mt-2 text-gray-300">{service.description}</p>
                     </div>
                   </div>
                 ))}

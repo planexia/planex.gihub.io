@@ -15,12 +15,12 @@ export default function Hero() {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span className="text-2xl sm:text-3xl text-white mb-2 block" style={{
-    color: 'black',
-    textShadow: '2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white, 0 2px 0 white, 2px 0 0 white, 0 -2px 0 white, -2px 0 0 white'
-}}>
-    PLANEXIA
-</span>
+          <span className="text-2xl sm:text-3xl text-white mb-2 block" style={{
+            color: 'black',
+            textShadow: '2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white, 0 2px 0 white, 2px 0 0 white, 0 -2px 0 white, -2px 0 0 white'
+          }}>
+            PLANEXIA
+          </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             Soluciones Empresariales<br />
             ERP y CRM
@@ -31,14 +31,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 shadow-lg"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-indigo-600 transition-all"
             >
               Contáctenos
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a
               href="#services"
-              className="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors"
+              className="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-indigo-600 transition-all"
             >
               Nuestros Servicios
               <ArrowRight className="ml-2 h-5 w-5" />
