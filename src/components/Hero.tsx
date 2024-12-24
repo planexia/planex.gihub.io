@@ -5,22 +5,37 @@ export default function Hero() {
   return (
     <div id="home" className="relative bg-white pt-16">
       <div className="h-screen flex items-center">
-        <div className="absolute inset-0">
-          <img
-            className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
-            alt="Office"
-          />
-          <div className="absolute inset-0 bg-blue-900/80 mix-blend-multiply" />
-        </div>
+      <div className="absolute inset-0">
+  <img
+    className="w-full h-full object-cover"
+    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+    alt="Office"
+  />
+  {/* Superposición con gradiente violeta oscuro */}
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-800 to-blue-700 to-black mix-blend-multiply" />
+</div>
+
+
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-2xl sm:text-3xl text-white mb-2 block" style={{
-            color: 'black',
-            textShadow: '2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white, 0 2px 0 white, 2px 0 0 white, 0 -2px 0 white, -2px 0 0 white'
-          }}>
-            PLANEXIA
-          </span>
+        <span
+  className="text-2xl sm:text-3xl text-white mb-2 block"
+  style={{
+    color: 'white',
+    textShadow: `
+      0 0 5px #fff, 
+      0 0 10px #fff, 
+      0 0 20px #fff, 
+      0 0 30px #fff, 
+      0 0 40px #fff, 
+      0 0 50px #fff, 
+      0 0 75px #fff`,
+    animation: 'glow 2s infinite'
+  }}
+>
+  PLANEXIA
+</span>
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             Soluciones Empresariales<br />
             ERP y CRM

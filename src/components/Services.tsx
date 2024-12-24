@@ -95,7 +95,17 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Frase antes de la foto */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl sm:text-4xl font-bold">
+          <h2
+            className="text-3xl sm:text-4xl font-bold"
+            style={{
+              textShadow: `
+                0 0 2px #fff,
+                0 0 5px #fff,
+                0 0 10px #0000ff,
+                0 0 15px #0000ff
+              `
+            }}
+          >
             Simplifique su Gestión con Dolibarr ERP/CRM
           </h2>
         </div>
@@ -111,7 +121,17 @@ export default function Services() {
 
         {/* Sección de servicios */}
         <div className="mt-16 mb-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-200">
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-gray-200"
+            style={{
+              textShadow: `
+                0 0 2px #fff,
+                0 0 5px #fff,
+                0 0 10px #0000ff,
+                0 0 15px #0000ff
+              `
+            }}
+          >
             Nuestros Servicios
           </h2>
           <p className="mt-4 text-lg sm:text-xl text-gray-300">
@@ -124,7 +144,18 @@ export default function Services() {
             <div 
               key={categoryIndex}
               className={category.title === 'Sector Agropecuario' ? 'flex flex-col items-center' : ''}>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-200 mb-8 text-center">
+              {/* Título de categoría con brillo suave */}
+              <h3
+                className="text-xl sm:text-2xl font-bold text-gray-200 mb-8 text-center"
+                style={{
+                  textShadow: `
+                    0 0 2px #fff,
+                    0 0 5px #fff,
+                    0 0 10px #0000ff,
+                    0 0 15px #0000ff
+                  `
+                }}
+              >
                 {category.title}
               </h3>
               <div 
