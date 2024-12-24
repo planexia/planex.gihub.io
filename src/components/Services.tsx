@@ -135,7 +135,8 @@ export default function Services() {
                   <div
                     key={serviceIndex}
                     className="relative group bg-white/10 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {/* Efecto gradiente al pasar el mouse */}
+                    <div className="absolute inset-0.5 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity" />
                     <div className="relative bg-white/10 p-6 rounded-lg">
                       <service.icon className="h-8 w-8 text-blue-600" />
                       <h3 className="mt-4 text-lg sm:text-xl font-bold text-gray-200">{service.title}</h3>
