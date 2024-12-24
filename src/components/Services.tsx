@@ -1,5 +1,8 @@
 import React from 'react';
+
 import { 
+  Leaf,
+  ChartSpline,
   BarChart, 
   Calculator, 
   Briefcase, 
@@ -45,7 +48,7 @@ const serviceCategories = [
       {
         title: 'Análisis Organizacional',
         description: 'Evaluación de organigrama e implementación de indicadores de gestión',
-        icon: Building2
+        icon:  ChartSpline
       },
       {
         title: 'Seguimiento Operativo',
@@ -80,7 +83,7 @@ const serviceCategories = [
       {
         title: 'Gestión Agropecuaria',
         description: 'Soluciones especializadas para el sector agrícola y ganadero',
-        icon: LineChart
+        icon: Leaf
       }
     ]
   }

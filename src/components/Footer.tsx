@@ -1,5 +1,6 @@
 import React from 'react';
-import { Building2, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Building2, Facebook, Twitter, Instagram, Linkedin, LucideBuilding2 } from 'lucide-react';
+import { Hexagon, Triangle } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,8 +12,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <Building2 className="h-8 w-8 text-blue-500" />
-              <span className="ml-2 text-xl font-bold text-white">Planexia</span>
+              <LucideBuilding2 className="h-8 w-8 text-blue-500" />
+              <span className="text-2xl font-bold tracking-wider">PLANEXIA</span> 
             </div>
             <p className="text-sm">
               Soluciones integrales de ERP y CRM para impulsar la transformación digital de su empresa.
