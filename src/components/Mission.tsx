@@ -7,7 +7,7 @@ export default function Mission() {
         <div className="bg-[rgba(0,0,0,0.8)] backdrop-blur-sm rounded-lg p-8">
           {/* Título principal con brillo suave */}
           <h2
-            className="text-3xl font-bold text-white mb-12 text-center"
+            className="text-4xl font-bold text-white mb-12 text-center"
             style={{
               textShadow: `
                 0 0 2px #fff,
@@ -33,7 +33,7 @@ export default function Mission() {
 
           {/* Sección Misión */}
           <h2
-            className="text-3xl font-bold text-white mb-12 text-center"
+            className="text-4xl font-bold text-white mb-12 text-center"
             style={{
               textShadow: `
                 0 0 2px #fff,
@@ -53,7 +53,7 @@ export default function Mission() {
 
           {/* Sección Valores */}
           <h3
-            className="text-2xl font-bold text-white mb-12 text-center"
+            className="text-4xl font-bold text-white mb-12 text-center"
             style={{
               textShadow: `
                 0 0 2px #fff,
