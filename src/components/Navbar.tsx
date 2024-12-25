@@ -34,7 +34,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center space-x-1">
             <div className="flex items-center justify-center border-[2px] border-white bg-[rgba(250, 250, 250, 0.8)] rounded-md ">
-              <a href="/home">
+              <a href="https://master--superb-sunburst-93c8a0.netlify.app/home">
                 <img
                   src="/logo-planexia.png"
                   className="w-28 rounded-md"
