@@ -41,8 +41,8 @@ export default function Contact() {
         // Add redirection logic here:
         const redirectUrl = '/'; // Replace with your desired redirect URL
         window.location.href = redirectUrl;
-} else { alert('Error al enviar el mensaje'); 
-}
+} 
+
     } catch (error) {
       console.error('Error:', error);
       alert('Error al enviar el mensaje');
