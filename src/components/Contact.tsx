@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import Hero from './Hero'; // Asegúrate de importar el componente Hero
+// Asegúrate de importar el componente Hero
+
+// Crear una referencia al componente Hero
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -10,7 +13,7 @@ export default function Contact() {
   });
 
   // Crear una referencia al componente Hero
-  const heroRef = useRef<HTMLDivElement | null>(null);
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -30,15 +33,16 @@ export default function Contact() {
           name: '',
           email: '',
           message: ''
+        
         });
+      
+  
 
-        // Redireccionar a la parte del componente Hero
-        if (heroRef.current) {
-          heroRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      } else {
-        alert('Error al enviar el mensaje');
-      }
+        // Add redirection logic here:
+        const redirectUrl = '/'; // Replace with your desired redirect URL
+        window.location.href = redirectUrl;
+} else { alert('Error al enviar el mensaje'); 
+}
     } catch (error) {
       console.error('Error:', error);
       alert('Error al enviar el mensaje');
@@ -56,7 +60,7 @@ export default function Contact() {
   return (
     <div>
       {/* Componente Hero */}
-      <Hero ref={heroRef} />
+     
 
       <div id="contact" className="bg-gradient-to-b from-black via-gray-800 to-gray-600 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -168,3 +172,7 @@ export default function Contact() {
     </div>
   );
 }
+function redirectTo(arg0: string) {
+  throw new Error('Function not implemented.');
+}
+
