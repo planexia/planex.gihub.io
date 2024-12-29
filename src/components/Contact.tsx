@@ -13,41 +13,36 @@ export default function Contact() {
   });
 
   // Crear una referencia al componente Hero
-
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     try {
-      const response = await fetch('https://back-planexia.onrender.com/send-email', {
+      const response = await fetch('http://localhost:8080/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         // Vaciar el formulario
         setFormData({
           name: '',
           email: '',
           message: ''
-        
         });
-      
   
-
-        // Add redirection logic here:
-        const redirectUrl = '/'; // Replace with your desired redirect URL
+        // Redireccionar si la respuesta es exitosa
+        const redirectUrl = '/'; // Reemplazar con la URL de redirección deseada
         window.location.href = redirectUrl;
-} 
-
+      }
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error de red:', error);
       alert('Error al enviar el mensaje');
     }
   };
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -171,8 +166,5 @@ export default function Contact() {
       </div>
     </div>
   );
-}
-function redirectTo(arg0: string) {
-  throw new Error('Function not implemented.');
 }
 
