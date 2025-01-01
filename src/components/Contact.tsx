@@ -17,7 +17,7 @@ export default function Contact() {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:8080/api/send-email', {
+      const response = await fetch('https://back-pia-3.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
