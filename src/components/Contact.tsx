@@ -54,9 +54,6 @@ export default function Contact() {
 
   return (
     <div>
-      {/* Componente Hero */}
-     
-
       <div id="contact" className="bg-gradient-to-b from-black via-gray-800 to-gray-600 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
